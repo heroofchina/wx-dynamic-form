@@ -1,0 +1,19 @@
+/* components/video-button-bar.wxss */
+.icon-container{
+  height: 100%;
+  position: absolute;
+  right:40rpx;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  z-index:999;
+}
+.cover-view-item{
+  height: 64rpx;width: 64rpx;
+  margin-bottom:100rpx;
+}
+
+.video-icon{
+  width: 64rpx;height: 64rpx;
+  display:inline-block; 
+}

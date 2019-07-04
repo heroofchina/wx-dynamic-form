@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "scroll-video": "../../components/my-video/scroll-video"
+  }
+}

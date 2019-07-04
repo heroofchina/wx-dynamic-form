@@ -1,0 +1,35 @@
+/* components/scroll-video.wxss */
+.video-container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  overflow: hidden;
+}
+.video-scroll-container{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 366;
+}
+.video-scroll-item{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 333;
+}
+.video-player{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.message-container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #000;
+}

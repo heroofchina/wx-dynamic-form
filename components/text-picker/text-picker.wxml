@@ -1,0 +1,17 @@
+<!--components/text-picker/text-picker.wxml-->
+<view class='reports-form-box form-inner'>
+          <view class='reports-form-input input-all-width'>
+            <view class='form-inputname'>{{forminfo.label}}<text wx:if="{{forminfo.force}}" class="force_text">*</text></view>
+            <picker class='form-inputtext'
+             bindchange="bindPickerChange"
+             value="{{forminfo.data[hx_index].id}}" 
+             data-selecthx="{{forminfo.data[hx_index].name}}"
+             range-key="{{'name'}}"  
+             value="{{index}}" 
+             range="{{forminfo.data}}">
+              <view class="picker">
+                {{forminfo.data[hx_index].name}}
+              </view>
+            </picker>
+          </view>
+</view>

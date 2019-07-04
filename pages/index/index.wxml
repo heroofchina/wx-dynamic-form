@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="video_container">
+  <!-- 
+  组件接口参数描述 
+  player-type      播放器类型 默认是视频 live是直播 video是点播
+  fit-type         填充模式，参考小程序原生的填充模式 video(contain,cover) 
+                   live(contain，fillCrop,RTC)
+  video-list       视频数据列表
+  swipeDown      下滑事件
+  menuTap        按钮被点击的事件
+  swipeUpper     上滑事件
+  swipeToStart   上滑到第一条数据
+  swipeToEnd     下滑到最后一条数据
+  
+   -->
+  <scroll-video 
+  player-type="{{playerType}}"
+  video-list="{{videoList}}"
+  fit-type="{{fitType}}"
+  bind:menuTap="menuTap"
+  bind:swipeDown="swipeDown"
+  bind:swipeUpper="swipeUpper"
+  bind:swipeToStart="swipeToStart"
+  bind:swipeToEnd="swipeToEnd"
+  >
+
+  </scroll-video>
+</view>

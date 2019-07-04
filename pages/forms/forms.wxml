@@ -1,0 +1,54 @@
+<!--pages/forms/forms.wxml-->
+<view class='reports-container'>
+
+   <view class='reports-box' 
+    wx:for="{{formList}}"
+    wx:for-index="idx"  
+    wx:for-item="fieldItem"
+    wx:key="{{fieldItem.fieldId}}">
+     <view class='reports-header'>
+        <view class='reports-header-line'></view>
+        <view class='reports-header-name'>{{fieldItem.fieldName}}</view>
+     </view>
+     <view class='reports-form'>
+       <block wx:for="{{fieldItem.formInfo}}" 
+                  wx:for-index="idx"  
+                  wx:for-item="items"
+                  wx:key="{{items.id}}">
+                <block wx:if="{{items.type==='text'}}">
+                   <text-input id="{{items.id}}" forminfo="{{items}}"></text-input>
+                </block>
+                <block wx:if="{{items.type==='picker'}}">
+                    <text-picker id="{{items.id}}" forminfo="{{items}}"></text-picker>
+                </block>
+
+                <block wx:if="{{items.type==='time'}}">
+                    <text-time id="{{items.id}}" forminfo="{{items}}"></text-time>
+                </block>
+
+                <block wx:if="{{items.type==='region'}}">
+                    <region-picker id="{{items.id}}" forminfo="{{items}}"></region-picker>
+                </block>
+
+                 <block wx:if="{{items.type==='upload'}}">
+                    <image-upload id="{{items.id}}" forminfo="{{items}}"></image-upload>
+                </block>
+
+                
+
+                
+
+        </block>
+     </view>
+
+ 
+
+  </view>
+
+   <view class='reports-form form-center'>
+   <!-- 并提交订单 -->
+    <view bindtap='getInputValue' class='reports-form-btn'>提交</view>
+  </view>
+ 
+</view>
+

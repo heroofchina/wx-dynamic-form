@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "text-input": "../../components/text-input/text-input",
+    "text-picker": "../../components/text-picker/text-picker",
+    "image-upload": "../../components/image-upload/image-upload",
+    "text-time": "../../components/text-time/text-time",
+    "region-picker":"../../components/region-picker/region-picker"
+  }
+}

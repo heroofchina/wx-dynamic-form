@@ -1,0 +1,7 @@
+<!--components/my-form/my-input.wxml-->
+<view class='reports-form-box form-inner'>
+          <view class='reports-form-input input-all-width'>
+            <view class='form-inputname'>{{forminfo.label}}<text wx:if="{{forminfo.force}}" class="force_text">*</text></view>
+            <input bindinput='enterValue' class='form-inputtext'></input>
+          </view>
+</view>

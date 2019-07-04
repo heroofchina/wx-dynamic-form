@@ -1,0 +1,16 @@
+<!--components/video-button-bar.wxml-->
+ <cover-view  class="icon-container">
+
+                  <cover-view class="cover-view-item" bindtap='toolBarButton' data-buttontype="1" data-buttonname="收藏" data-itemid="{{items.videoid}}">
+                    <cover-image class="video-icon" src='../images/fav.png'/>
+                  </cover-view>
+                
+                  <cover-view class="cover-view-item"  bindtap='toolBarButton' data-buttontype="2" data-buttonname="消息" data-itemid="{{items.videoid}}">
+                    <cover-image   class="video-icon" src='../images/msg.png'/>
+                  </cover-view>
+
+                  <cover-view class="cover-view-item"  bindtap='toolBarButton' data-buttontype="3" data-buttonname="分享" data-itemid="{{items.videoid}}">
+                    <cover-image   class="video-icon" src='../images/share.png'/>
+                  </cover-view>
+                  
+</cover-view>

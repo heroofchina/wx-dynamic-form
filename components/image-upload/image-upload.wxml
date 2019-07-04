@@ -1,0 +1,11 @@
+<!--components/image-upload/image-upload.wxml-->
+<view class='reports-form-box form-inner'>
+          <view class='reports-form-input input-all-width'>
+            <view class='form-inputname'>{{forminfo.label}}<text wx:if="{{forminfo.force}}" class="force_text">*</text></view>
+            <block wx:if="{{inputType==='upload'}}"><button bindtap='uploadImage' class='form-inputtext form-upload'></button></block>
+            <block wx:if="{{inputType==='uploaded'}}">
+               <input  bindtap='uploadImage' value='{{input_text}}' class='form-inputtext'></input>
+            </block>
+
+          </view>
+</view>

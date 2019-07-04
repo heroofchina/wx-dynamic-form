@@ -1,0 +1,105 @@
+/* pages/forms/forms.wxss */
+.reports-header{
+  display: flex;
+  padding:20rpx 0rpx;
+  align-items: center;
+}
+.reports-header-line{
+  width: 10rpx;height: 36rpx;
+  border-radius: 5rpx;
+  background-color: green;
+  margin: 0 14rpx 0rpx  28rpx;
+}
+.reports-header-name{
+  font-size:34rpx;
+  font-family:PingFang-SC-Bold;
+  font-weight:bold;
+  color:green;
+}
+
+.reports-form-btn{
+  width: 694rpx;
+  height:90rpx;
+  background:green;
+  border-radius:10rpx; 
+  font-size:36rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:rgba(255,255,255,1);
+text-align: center;
+line-height: 90rpx;
+}
+
+.form-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100rpx;
+}
+
+.reports-form-box{
+  display: flex;
+  margin-bottom: 30rpx;
+  margin-left: 28rpx;
+}
+
+.reports-form-input{
+  width:332rpx;
+  height:70rpx;
+  background:rgba(255,255,255,1);
+  border:1px solid rgba(203,200,203,1);
+  border-radius:5rpx;
+  margin-right: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.form-inputname{
+  font-size:28rpx;
+  font-family:PingFang-SC-Bold;
+  font-weight:bold;
+  color:rgba(51,51,51,1);
+  width:152rpx;
+  padding-left: 20rpx;
+}
+
+.form-inputtext{
+   width: 450rpx;
+   height:30rpx;
+   font-family:PingFang-SC-Bold;
+  font-weight:bold;
+  color:rgba(51,51,51,1);
+  font-size:28rpx;
+  display: flex;
+  align-items: center;
+}
+.form-upload{
+  height: 50rpx;
+  opacity: 0;
+}
+
+.form-inputtext>.picker{
+   font-family:PingFang-SC-Bold;
+  font-weight:bold;
+  color:rgba(51,51,51,1);
+  font-size:28rpx
+}
+
+.form-inner{
+  display: block;
+}
+
+.input-all-width{
+  width:694rpx;
+}
+.input-l-width{
+  width: 260rpx;
+  margin-right:10rpx;
+}
+.force_text{
+  color: rgba(219,44,31,1);
+  padding-left: 10rpx;
+}
+.picker{
+  font-size: 24rpx;
+   width: 450rpx; height:30rpx;
+}

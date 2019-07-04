@@ -1,0 +1,24 @@
+<!--components/region-picker/region-picker.wxml-->
+<view class='reports-form-box form-inner'>
+          <view class='reports-form-input input-all-width'>
+            <view class='form-inputname'>{{forminfo.label}}<text wx:if="{{forminfo.force}}" class="force_text">*</text></view>
+           
+
+            <picker mode="region"
+            class='form-inputtext'
+            bindchange="bindPickerChange" 
+            value="{{input_text}}"
+            custom-item="{{customItem}}">
+            <view class="picker">
+              {{input_text[0]}}-{{input_text[1]}}-{{input_text[2]}}
+            </view>
+          </picker>
+
+      
+
+
+
+
+          </view>
+</view>
+
