@@ -16,7 +16,7 @@
                   wx:for-item="items"
                   wx:key="{{items.id}}">
                 <block wx:if="{{items.type==='text'}}">
-                   <text-input id="{{items.id}}" forminfo="{{items}}"></text-input>
+                   <text-input id="{{items.id}}" role="{{items.role}}" forminfo="{{items}}"></text-input>
                 </block>
                 <block wx:if="{{items.type==='picker'}}">
                     <text-picker id="{{items.id}}" forminfo="{{items}}"></text-picker>

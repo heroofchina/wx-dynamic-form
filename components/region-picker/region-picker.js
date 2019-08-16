@@ -29,7 +29,10 @@ Component({
   },
   //组件最终对外导出的数据
   export() {
-    return { input_text: this.data.input_text }
+    return {
+      input_text: this.data.input_text,
+      force: this.properties.forminfo.force,
+      role: this.properties.forminfo.role }
   },
   /**
    * 组件的方法列表

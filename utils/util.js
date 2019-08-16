@@ -32,7 +32,13 @@ const wx_upload_image=function(path){
     })
 }
 
+var vbind=function(fn){
+  var Fn=Function;
+  return new Fn('return ' + fn)(); 
+}
+
 module.exports = {
   formatTime: formatTime,
-  wx_upload_image: wx_upload_image
+  wx_upload_image: wx_upload_image,
+  vbind: vbind
 }

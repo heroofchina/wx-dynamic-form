@@ -10,8 +10,9 @@ const formConfig = [
         placeholder: '输入您的姓名',//设置文本框默认提示
         data: [], //填充表单的数据 例如下拉框
         role: {
-          type: 'reg',
+          type: 'notnull',
           value: '',//正则表达式
+          msg: '名字不为空',
         },
         force: true,//是否必输入
       },
@@ -27,7 +28,8 @@ const formConfig = [
           //2.notnull 非空验证 
           //3.null 不验证
           type: 'reg',
-          value: '',//正则表达式
+          msg:'身份证不合法',
+          value: '/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{4}$/',//正则表达式
         },
         force: true,//是否必输入
       },
@@ -41,8 +43,9 @@ const formConfig = [
           { id: 2, name: '女' },
         ], //填充表单的数据 例如下拉框
         role: {
-          type: 'reg',
+          type: 'notnull',
           value: '',//正则表达式
+          msg: '请选择性别',
         },
         force: true,//是否必输入
       }
